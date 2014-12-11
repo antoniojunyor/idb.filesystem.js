@@ -27,6 +27,10 @@
 
 'use strict';
 
+if(typeof(self) === "undefined") {
+  self = this;
+}
+
 (function(exports) {
 
 // Bomb out if the Filesystem API is available natively.
